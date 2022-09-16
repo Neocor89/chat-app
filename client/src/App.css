@@ -27,7 +27,7 @@ body {
   justify-content: center;
 
   padding: 2rem;
-  background: #005fff;
+  background: #3a86ff;
 }
 
 .auth__form-container_image {
@@ -296,7 +296,7 @@ body {
   height: 100%;
   width: 100%;
 }
-
+/* 3a86ff */
 .str-chat__thread {
   z-index: 1;
 }
