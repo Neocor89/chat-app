@@ -8,21 +8,27 @@
 
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
-## Getting Started Create React App
+## **FRONTEND**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### Getting Started Create React App
 
-In the project directory, you can run:
+### In the project directory, <span style="color: #6da5ff; font-weight: bold">client/</span>
+
+_run_:
 
 ### `npm start`
+
+### 🛒 Another Command Usage
+
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The page will reload when you make changes.\
+  You may also see any lint errors in the console.
 
 ### `npm test`
 
@@ -34,8 +40,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The build is minified and the filenames include the hashes.\
+  Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
@@ -87,3 +93,14 @@ Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
 ```
 "start": "GENERATE_SOURCEMAP=false react-scripts start",
 ```
+
+## **BACKEND**
+
+### In the project directory : <span style="color: yellow; font-weight: bold">server/</span>
+
+- run:
+
+### `npm run dev`
+
+Runs the app in the development mode.\
+Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
