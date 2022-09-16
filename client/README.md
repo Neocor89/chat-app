@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Medical Chat App 🧑🏽‍⚕️
+
+### **Techno Setup 🤖**
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Firebase](https://img.shields.io/badge/Firebase-EB743B?style=for-the-badge&logo=Firebase&logoColor=white)
+
+### **Application deployment platform 🎉**
+
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+
+## Getting Started Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -69,7 +79,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-- Problem with 
+- Terminal Problem
 
 **WARNING** in ./node_modules/html-to-react/node_modules/entities/lib/generated/encode-html.js
 Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):

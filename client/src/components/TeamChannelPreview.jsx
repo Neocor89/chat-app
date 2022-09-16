@@ -1,10 +1,10 @@
 import React from 'react'
-import { Avatar, ChannelPreview, useChatContext } from 'stream-chat-react'
+import { Avatar, useChatContext } from 'stream-chat-react'
 
 const TeamChannelPreview = ({ channel, type }) => {
   const { channel: activeChannel, client } = useChatContext();
 
-  const channelPreview = () => (
+  const ChannelPreview = () => (
     <p>
       # { channel?.data?.name || channel?.data?.id }
     </p>
@@ -27,7 +27,9 @@ const TeamChannelPreview = ({ channel, type }) => {
 
   return (
     <div className={
-      channel?.id === activeChannel?.id ? 'channel-preview__wrapper__selected' : 'channel-preview__wrapper'
+      channel?.id === activeChannel?.id 
+      ? 'channel-preview__wrapper__selected' 
+      : 'channel-preview__wrapper'
     }
     onClick={() => {
       console.log(channel);
