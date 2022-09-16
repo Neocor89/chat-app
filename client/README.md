@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+- Problem with 
+
+**WARNING** in ./node_modules/html-to-react/node_modules/entities/lib/generated/encode-html.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+
+```
+"start": "GENERATE_SOURCEMAP=false react-scripts start",
+```
