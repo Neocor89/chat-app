@@ -8,7 +8,7 @@ import { ChannelContainer, ChannelListContainer, Auth } from './components';
 import './App.css';
 
 const apiKey = 'bbdm4zqd6c3b';
-
+//! :: "new" = Test for fix one bug;
 const client = new StreamChat.getInstance(apiKey);
 
 const authToken = false;
