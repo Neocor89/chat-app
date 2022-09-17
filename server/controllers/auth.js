@@ -2,7 +2,9 @@
 const { connect } = require("getstream");
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
-const StreamChat = require("stream-chat");
+const StreamChat = require("stream-chat").StreamChat;
+
+require("dotenv").config();
 
 //:: .env Variables
 const api_key = process.env.STREAM_API_KEY;

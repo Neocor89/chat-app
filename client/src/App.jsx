@@ -1,17 +1,35 @@
 import React from 'react';
+
+//: Dependencies Imports
 import { StreamChat } from 'stream-chat';
 import { Chat } from 'stream-chat-react';
-import { Cookies } from 'universal-cookie';
+import Cookies from 'universal-cookie';
 
+//: components Imports
 import { ChannelContainer, ChannelListContainer, Auth } from './components';
 
 import './App.css';
 
-const apiKey = 'bbdm4zqd6c3b';
-//! :: "new" = Test for fix one bug;
-const client = new StreamChat.getInstance(apiKey);
+const cookies = new Cookies();
 
-const authToken = false;
+const apiKey = 'bbdm4zqd6c3b';
+const authToken = cookies.get('token');
+
+//! :: "new" = Test for fix one bug;
+const client = StreamChat.getInstance(apiKey);
+//:: Before is here (const authToken = false;)
+
+if(authToken) {
+  client.connectUser({
+    id: cookies.get('userId'),
+    name: cookies.get('username'),
+    fullName: cookies.get('fullName'),
+    image: cookies.get('avatarURL'),
+    token: cookies.get('token'),
+    hashedPassword: cookies.get('hashedPassword'),
+    phoneNumber: cookies.get('phoneNumber'),
+  }, authToken)
+}
 
 const App = () => {
   
