@@ -33,7 +33,7 @@ const Auth = () => {
     const URL = 'http://localhost:5000/auth';
 
     const { data: { token, userId, hashedPassword } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`,{
-      username, password, fullName, phoneNumber, avatarURL,
+      username, password, fullName: form.fullName, phoneNumber, avatarURL,
     });
 
     //: Set this values in cookies

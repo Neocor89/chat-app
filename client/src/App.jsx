@@ -17,7 +17,6 @@ const authToken = cookies.get('token');
 
 //! :: "new" = Test for fix one bug;
 const client = StreamChat.getInstance(apiKey);
-//:: Before is here (const authToken = false;)
 
 if(authToken) {
   client.connectUser({
@@ -25,7 +24,6 @@ if(authToken) {
     name: cookies.get('username'),
     fullName: cookies.get('fullName'),
     image: cookies.get('avatarURL'),
-    token: cookies.get('token'),
     hashedPassword: cookies.get('hashedPassword'),
     phoneNumber: cookies.get('phoneNumber'),
   }, authToken)

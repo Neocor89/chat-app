@@ -1,17 +1,17 @@
 import React from 'react';
-
-//: Dependencies
+//: Components
+import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
 import { ChannelList, useChatContext }from 'stream-chat-react';
-import { Cookies }from 'universal-cookie';
+//: Dependencies
+import Cookies from 'universal-cookie';
 
 //: Assets
 import HospitalIcon from '../assets/HospitalIcon.png';
 import LogoutIcon from '../assets/logout.png';
 
-//: Components
-import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
+const cookies = new Cookies();
 
-const SideBar = () => (
+const SideBar = ({ logout }) => (
   <div className='channel-list__sidebar'>
     <div className='channel-list__sidebar__icon1'>
       <div className='icon1__inner'>
@@ -19,8 +19,8 @@ const SideBar = () => (
       </div>
     </div>
     <div className='channel-list__sidebar__icon2'>
-      <div className='icon1__inner'>
-        <img src={LogoutIcon} alt="logout" width="30" />
+      <div className='icon1__inner' onClick={logout}>
+        <img src={LogoutIcon} alt="logout" title="Exit Chat" width="30" />
       </div>
     </div>
   </div>
@@ -31,11 +31,26 @@ const CompagnyHeader = () => (
     <p className='channel-list__header__text'>Medical Chat App</p>
   </div>
 )
-
+//:: document.cookie = 'cookie2=value2; SameSite=None; Secure'; :://
+//:: For Fixing error SameSite Cookies => Google Analytics
 const ChannelListContainer = () => {
+  const logout = () => {
+    cookies.remove('token');
+    cookies.remove('userId');
+    cookies.remove('username');
+    cookies.remove('fullName');
+    cookies.remove('token');
+    cookies.remove('avatarURL');
+    cookies.remove('hashedPassword');
+    cookies.remove('phoneNumber');
+
+    window.location.reload();
+
+  }
+
   return (
     <>
-      <SideBar />
+      <SideBar logout={logout} />
       <div className='channel-list__list__wrapper'>
         <CompagnyHeader />
         <ChannelSearch />
