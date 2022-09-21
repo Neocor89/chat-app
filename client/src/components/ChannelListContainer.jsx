@@ -1,7 +1,8 @@
 import React from 'react';
 //: Components
-import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
 import { ChannelList, useChatContext }from 'stream-chat-react';
+
+import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
 //: Dependencies
 import Cookies from 'universal-cookie';
 
@@ -31,8 +32,12 @@ const CompagnyHeader = () => (
     <p className='channel-list__header__text'>Medical Chat App</p>
   </div>
 )
-//:: document.cookie = 'cookie2=value2; SameSite=None; Secure'; :://
-//:: For Fixing error SameSite Cookies => Google Analytics
+
+/* 
+:: For Fixing error SameSite Cookies => Google Analytics ::
+:: document.cookie = 'cookie2=value2; SameSite=None; Secure'; ::
+*/
+
 const ChannelListContainer = () => {
   const logout = () => {
     cookies.remove('token');
