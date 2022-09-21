@@ -2,7 +2,7 @@
   --primary-color: #005fff;
   --primary-color-alpha: #005fff1a;
   --white: #fff;
-  --black50: rgba(0, 0, 0, 0.05);
+  /* --black50: rgba(0, 0, 0, 0.05); */
   --size-fields: 12px;
 }
 
@@ -944,7 +944,7 @@ body {
 }
 
 .team-channel-list__message {
-  color: var(--white)fff;
+  color: var(--white);
   padding: 0 16px;
 }
 
@@ -959,9 +959,16 @@ body {
   align-items: center;
 }
 
+.team-channel-list__header p {
+  color: var(--black);
+}
+
 .team-channel-list__header svg {
   cursor: pointer;
+  background-color: #000;
+  border-radius: 16px;
 }
+
 
 .team-channel-list__header__title {
   font-family: Helvetica Neue, sans-serif;

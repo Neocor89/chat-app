@@ -1,5 +1,5 @@
 import React from 'react'
-import { Channel, MessageText, useChatContext } from 'stream-chat-react';
+import { Channel, MessageSimple, useChatContext } from 'stream-chat-react';
 //: Before MessageTeam is deprecated now its'possible use  is instantiated
 import { ChannelInner, CreateChannel, EditChannel } from './';
 
@@ -33,9 +33,9 @@ const ChannelContainer = ({ isCreating, setIsCreating, isEditing, setIsEditing, 
 
   return (
     <div className="channel__container">
-      <Channel 
+      <Channel
       EmptyStateIndicator={EmptyState} //: Before = key={i} message={...messageProps}
-      Message={(messageProps, i) => <MessageText key={i} {...messageProps} />}
+      Message={(messageProps, i) => <MessageSimple key={i} {...messageProps} />}
       >
         <ChannelInner setIsEditing={setIsEditing} />
       </Channel>
