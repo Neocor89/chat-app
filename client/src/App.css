@@ -2,7 +2,7 @@
   --primary-color: #005fff;
   --primary-color-alpha: #005fff1a;
   --white: #fff;
-  /* --black50: rgba(0, 0, 0, 0.05); */
+  /* --black50: rgba(0, 0, 0, 0.05);  = Delete bad oacity */
   --size-fields: 12px;
 }
 
