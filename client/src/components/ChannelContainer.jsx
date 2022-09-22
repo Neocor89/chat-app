@@ -1,11 +1,11 @@
 import React from 'react'
-import { Channel, MessageSimple, useChatContext } from 'stream-chat-react';
+import { Channel, MessageSimple } from 'stream-chat-react';
 //: Before MessageTeam is deprecated now its'possible use  is instantiated
 import { ChannelInner, CreateChannel, EditChannel } from './';
 
 const ChannelContainer = ({ isCreating, setIsCreating, isEditing, setIsEditing, createType }) => {
   //: Get info for specific channel
-  const { channel } = useChatContext();
+  
 
   //: Create channel
   if(isCreating) {
